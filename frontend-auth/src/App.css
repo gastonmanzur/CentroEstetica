@@ -1,0 +1,337 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  padding: 10px 20px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-list li {
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* AdminTurnos */
+
+.admin-turno {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.admin-turno h2,
+.admin-turno h3 {
+  color: #b03060;
+  text-align: center;
+}
+
+.shift-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.shift-form input,
+.shift-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.shift-form button {
+  background-color: #cc6699;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.shift-form button:hover {
+  background-color: #b94d8f;
+}
+
+.shift-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shift-card {
+  background-color: #ffe4ec;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ServiceDetail */
+
+.shift-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shift-card {
+  background-color: #ffe4ec;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* Service */
+
+.services-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-vertical-card {
+  background-color: #fff0f5;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.service-vertical-card:hover {
+  transform: scale(1.03);
+}
+
+.service-vertical-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 15px;
+}
+
+.service-info h3 {
+  color: #b03060;
+}
+
+.service-info p {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.service-info button {
+  background-color: #cc6699;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.service-info button:hover {
+  background-color: #b94d8f;
+}
+
+/* TurnosReservados */
+
+.admin-shift-list {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.shift-card {
+  background-color: #ffe4ec;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.shift-card button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #cc6699;
+  color: white;
+  cursor: pointer;
+}
+
+.shift-card button:hover {
+  background-color: #b94d8f;
+}
+
+/* ServiceCard */
+
+/* src/components/ServiceCard.css */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff0f5;
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.service-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 15px 0;
+}
+
+.service-content h2 {
+  color: #b03060;
+  margin: 0;
+}
+
+.service-content h4 {
+  color: #cc6699;
+  margin: 5px 0;
+}
+
+.service-content p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* AddService */
+
+.add-service-form {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff0f5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.add-service-form h2 {
+  text-align: center;
+  color: #b03060;
+  margin-bottom: 30px;
+}
+
+.add-service-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-service-form label {
+  font-weight: bold;
+  color: #cc6699;
+  margin-bottom: 5px;
+}
+
+.add-service-form input,
+.add-service-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-service-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-service-form button {
+  background-color: #cc6699;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-service-form button:hover {
+  background-color: #b94d8f;
+}
+
+.service-admin-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-admin-card {
+  background-color: #ffe4ec;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-admin-card h4 {
+  margin: 0;
+  color: #b03060;
+}
+
+.service-admin-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.service-admin-card button {
+  margin-right: 10px;
+  background-color: #cc6699;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.service-admin-card button:hover {
+  background-color: #b94d8f;
+}

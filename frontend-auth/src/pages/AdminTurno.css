@@ -1,0 +1,55 @@
+.admin-turno {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .admin-turno h2,
+  .admin-turno h3 {
+    color: #b03060;
+    text-align: center;
+  }
+  
+  .shift-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .shift-form input,
+  .shift-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .shift-form button {
+    background-color: #cc6699;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .shift-form button:hover {
+    background-color: #b94d8f;
+  }
+  
+  .shift-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .shift-card {
+    background-color: #ffe4ec;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
