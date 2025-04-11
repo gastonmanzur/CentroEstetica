@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useAuth } from './context/AuthContext';
 import { Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import GoogleSuccess from "./pages/GoogleSuccess";
@@ -13,6 +14,8 @@ import AdminTurno from "./pages/AdminTurno";
 import MyShifts from './pages/MyShifts';
 import TurnosReservados from "./pages/TurnosReservados";
 import './App.css';
+import Footer from "./components/Footer";
+import ReviewsSection from "./components/ReviewsSection";
 
 
 
@@ -24,9 +27,14 @@ function AdminRoute({ children }) {
 }
 
 export default function App() {
+
+  const { auth } = useAuth();
+
   return (
+    <div className="app-container"> 
     <BrowserRouter>
-      <Navbar />
+    <header><Navbar /></header>
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/google-success" element={<GoogleSuccess />} />
@@ -52,8 +60,15 @@ export default function App() {
         <Route path="/shifts" element={<AdminTurno />} />    
         <Route path="/my-shifts" element={<MyShifts />} />
         <Route path="/turnosReservados" element={<TurnosReservados />} />
-                                                                                                                                                    
+        <Route path="reviews" element={<ReviewsSection />} />
+                                                                                                                                            
       </Routes>
+      </main>
+
+      <footer>
+      {auth.token && <Footer />}
+      </footer>
     </BrowserRouter>
+    </div>
   );
 }

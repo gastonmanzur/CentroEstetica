@@ -44,7 +44,7 @@ const TurnosReservados = () => {
             <h4>{shift.serviceId?.title || 'Servicio'}</h4>
             <p><strong>Fecha:</strong> {shift.date}</p>
             <p><strong>Hora:</strong> {shift.time}</p>
-            <p><strong>Cliente:</strong> {shift.bookedBy?.name || 'No registrado'}</p>
+            <p><strong>Cliente:</strong> {shift.bookedBy?.nombre || 'No registrado'}</p>
             <p><strong>Email:</strong> {shift.bookedBy?.email || '---'}</p>
             <p><strong>Estado:</strong> {shift.status}</p>
 
@@ -58,3 +58,4 @@ const TurnosReservados = () => {
 };
 
 export default TurnosReservados;
+

@@ -16,6 +16,7 @@ export default function LoginForm() {
       localStorage.setItem('rol', usuario.rol);
       localStorage.setItem('foto', usuario.foto || '');
       localStorage.setItem('userId', usuario._id); // ✅ Esta línea es clave
+      localStorage.setItem('userName', usuario.nombre); // o datos.nombre
       console.log('Login response:', res.data);
       console.log('Respuesta del backend:', res.data);
       console.log('Usuario:', usuario);

@@ -1,0 +1,16 @@
+.dashboard h2 {
+  font-weight: 600;
+}
+
+.dashboard .card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 4px solid #ccc;
+  border-radius: 8px;
+}

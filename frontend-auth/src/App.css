@@ -1,10 +1,91 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fbcfe6 ;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+};
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100vh; /* ocupa al menos el alto completo de la ventana */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+background-color: #fce8f3  ;  
+}
+
+main {
+  flex: 1; /* toma todo el espacio disponible restante */
+}
+
+footer {
+margin-bottom: .5rem;
+}
+
+
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+  transform: scale(1.03);
+}
+
+.card {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Carrusel */
+
+.carousel_height{
+  max-height: 500px;
+ 
+}
+
+
+
 /* Navbar */
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background: #eee;
+.container-fluid {
+  background-color: #000;
+min-height: 150px;
+  width: 100%;
+  margin-top: .5rem;
+  margin-bottom: 0;
   padding: 10px 20px;
+
+}
+
+nav ul{
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .navbar-list {
@@ -15,12 +96,28 @@
 
 .navbar-list li {
   cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-left: 1.2rem;
+}
+
+.navbar-list li:hover {
+  color: #ccc;
+  font-size: 21px;
+  font-weight: 900; 
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color:   #cc6699;
 }
 
 .profile-pic img {
@@ -334,4 +431,137 @@
 
 .service-admin-card button:hover {
   background-color: #b94d8f;
+}
+
+
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #000;
+  --accent-color: #ff9e7b;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+  transform: scale(1.03);
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Footer personalizado */
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+footer small {
+  color: #bbb;
+}
+
+footer .bi {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+
+/*Carrusel*/
+
+.img_carrusel{
+  height: 500px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+/*dashboard */
+
+.dashboard{
+  background-color: #fce8f3    ;
+}
+
+.img_info{
+  max-width: 300px;
 }
