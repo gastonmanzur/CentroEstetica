@@ -59,7 +59,7 @@ export default function Navbar() {
   return (
      isLoggedIn && (
 
-<nav className="navbar navbar-expand-lg d-flex  bg-body-tertiary">
+<nav className="navbar navbar-expand-lg d-flex  navbar-dark bg-body-tertiary">
   <div className="container-fluid">
   <Link to="/dashboard" className="logo flex-fill">Aesthetic</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse flex-row" id="navbarSupportedContent">
     
-    <ul className="navbar-list flex-fill">
+    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         {(rol === 'admin' ? itemsAdmin : itemsUsuario).map((item) => (
              <li key={item.label} onClick={() => handleNavigate(item.path)}>
               {item.label}

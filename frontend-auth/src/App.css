@@ -18,7 +18,7 @@ html, body {
   min-height: 100vh; /* ocupa al menos el alto completo de la ventana */
   display: grid;
   grid-template-rows: auto 1fr auto;
-background-color: #fce8f3  ;  
+background-color:  white;  
 }
 
 main {
@@ -125,6 +125,32 @@ nav ul{
   height: 35px;
   border-radius: 50%;
 }
+
+.navbar-nav li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.navbar-nav li:hover {
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+}
+
+.navbar-nav li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav li:hover {
+  background-color: #1a1919;
+  border-radius: 0.25rem;
+}
+
+
+
+
+
 
 /* AdminTurnos */
 
@@ -564,4 +590,10 @@ footer .bi {
 
 .img_info{
   max-width: 300px;
+}
+
+/* Login/Register */
+
+.background-login{
+  background-color: #fce8f3;
 }

@@ -3,6 +3,7 @@ import { Modal, Button, Form } from 'react-bootstrap';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 const ReviewsSection = () => {
   const [reviews, setReviews] = useState([]);
@@ -32,6 +33,21 @@ const ReviewsSection = () => {
         setNewReview({ name: '', comment: '' });
       })
       .catch((err) => console.error('Error al enviar reseña:', err));
+  };
+
+  const enviarReseña = async (contenido) => {
+    const token = localStorage.getItem('token');
+  
+    try {
+      const res = await axios.post(
+        'http://localhost:5000/api/reseñas',
+        { contenido },
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      console.log('Reseña guardada:', res.data);
+    } catch (err) {
+      console.error('Error al guardar la reseña:', err.response?.data?.mensaje || err.message);
+    }
   };
 
   return (

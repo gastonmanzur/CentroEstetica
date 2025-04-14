@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -26,12 +28,12 @@ export default function Footer() {
           {/* Redes sociales */}
           <div className="col-md-4 mb-3">
             <h5 className="text-accent">Seguinos</h5>
-            <a href="#" className="text-light text-decoration-none d-block mb-1">
+            <Link to="https://www.instagram.com/" className="text-light text-decoration-none d-block mb-1">
               <i className="bi bi-instagram me-2"></i>Instagram
-            </a>
-            <a href="#" className="text-light text-decoration-none d-block">
+            </Link>
+            <Link to="https://es-la.facebook.com" className="text-light text-decoration-none d-block">
               <i className="bi bi-facebook me-2"></i>Facebook
-            </a>
+            </Link>
           </div>
         </div>
 
